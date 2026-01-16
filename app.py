@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("BABI AI😒")
+st.title("DUARI DAKAT☠️")
 
 # Initialize chat history
 if "messages" not in st.session_state:
