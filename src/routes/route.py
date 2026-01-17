@@ -16,12 +16,12 @@ def chat_agent_route(thread_id: str, message: str) -> ChatAgentState:
 
 
 @router.get("/chat/threads")
-def get_all_threads() -> list[str]:
+def get_all_threads() -> list[str | None]:
     """"""
     return get_all_threads_handler()
 
 
 @router.get("/chat/history/{thread_id}")
-def get_chat_history(thread_id: str) -> ChatAgentState:
+def get_chat_history(thread_id: str) -> ChatAgentState | dict[None, None]:
     """"""
     return chat_history_handler(thread_id=thread_id)

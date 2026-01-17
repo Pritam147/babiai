@@ -1,4 +1,13 @@
+.web
+*.db
+*.py[cod]
+assets/external/
+.states
+__pycache__/
 .venv
 __pycache__
 hidden.txt
 .env
+assets
+requirements.txt
+rxconfig.py

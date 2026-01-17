@@ -30,6 +30,6 @@ def get_all_threads_handler() -> list[str | None]:
     return list(threads)
 
 
-def chat_history_handler(thread_id: str) -> ChatAgentState:
+def chat_history_handler(thread_id: str) -> ChatAgentState | dict[None, None]:
     """"""
     return graph.get_state(config={"configurable": {"thread_id": thread_id}})[0]
