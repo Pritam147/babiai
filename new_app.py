@@ -6,7 +6,7 @@ import time
 
 BASE_URL = "http://localhost:8000"
 
-st.title("BABI AI😒")
+st.title("REFLEX AI")
 st.set_page_config(layout="wide")
 
 # ------------------ Helpers ------------------
@@ -122,7 +122,7 @@ if user_input:
     # 2. Handle Assistant Response
     with st.chat_message("assistant"):
         # The spinner will wrap the request initialization
-        with st.spinner("BABI AI is thinking..."):
+        with st.spinner("Thinking..."):
 
             def stream_request():
                 with requests.post(

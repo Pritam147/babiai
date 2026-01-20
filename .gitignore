@@ -9,5 +9,5 @@ __pycache__
 hidden.txt
 .env
 assets
-requirements.txt
+# requirements.txt
 rxconfig.py
